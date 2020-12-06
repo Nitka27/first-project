@@ -19,9 +19,6 @@
   z-index: 1;
   /* выше установили ограничения для секции */
 }
-
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -37,6 +34,9 @@
   margin-left: 64px;
   margin-top: 30px;
 }
+.link{
+  text-decoration: none;
+}
 
 .header__title {
   height: 100%;
@@ -47,12 +47,6 @@
   font-weight: bold;
   line-height: 96px;
   align-items: center;
-  }
-
-
-  .link {
-    content: \2192;
-
   }
 
 .header__subtitle {
@@ -71,12 +65,20 @@ font-weight: normal;
   height: 608px;
   z-index: 1;
 }
+/* конец шапки*/
 
+.description{
+  padding-top: 100px;
+  margin: 0;
+}
 .two-columns {
   display: flex;
-  align-items: flex-start;
-justify-content: center;
-  margin: 100 auto 100 auto;
+  flex-wrap: wrap;
+justify-content: space-between;
+width: 80%;
+margin-right: auto;
+margin-left: auto;
+padding: 0;
 }
 
 .two-columns__brief {
@@ -89,10 +91,11 @@ justify-content: center;
 }
 .two-columns__main-text{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  width: 80%;
   min-width: 784px;
+  width: 80%;
   }
 .two-columns__span_accent {
   line-height: 34px;
@@ -102,18 +105,21 @@ justify-content: center;
 .two-columns__paragraf {
   width: 80%;
   min-width: 784px;
-  margin-top: 0;
   margin-bottom: 30px;
-  padding-top: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
+/* конец секции*/
+
+.digits{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding: 0 0;
+  }
 .section-title{
-  display: flex;
-  justify-content: center;
+  text-align: center;
   width: 60%;
-  top: 100px;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
@@ -121,21 +127,22 @@ justify-content: center;
   margin-right: auto;
   }
 .section-subtitle{
-  display: flex;
-  justify-content: center;
+  text-align: center;
   width: 60%;
-  top: 20px;
+  margin-top: 20px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 0 auto 0 auto;
+  margin-left: auto; 
+  margin-right: auto;
 }
 .table{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 width: 1100px;
-margin: 0 auto 100px auto;
+margin-left: auto;
+margin-right: auto;
 }
 .table__cell{
   display: flex;
@@ -143,54 +150,50 @@ margin: 0 auto 100px auto;
   flex-wrap: wrap;
   width: 250px;
   margin-top: 60px;
-   }
+}
 .table__heading{
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
+  padding: 0;
   }
 .table__text{
   margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  padding: 0;
 }
 
-  /* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  display: flex;
-  flex-wrap: wrap;
-  width: 200px;
-  color: white;
-  margin-top: 80px;
-  flex-direction: column;
-  z-index: 2;
-}
 .feynman{
   position: relative;
   height: 790px;
-  
-}
+  background-color: #f2f2f2;
+  z-index: -2;
+  padding: 0;
+  margin: 0;
+  }
 .feynman__title{
-  line-height: 1.15;
-  font-size: 120px;
-  font-weight: bold;
-  width: 648px;
-  top: 100px;
   text-align: center;
-  position: relative;
+  width: 648px;
+  line-height: 1.15;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
-
-}
+  padding: 0;
+  font-size: 120px;
+  font-weight: bold;
+  z-index: 1;
+  }
 .feynman__subtitle{
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
- margin: 70 auto auto auto;
+  margin: 70 auto auto auto;
   text-align: center;
-  position: relative;
-}
+  z-index: 2;
+  padding: 0;
+  }
 .feynman__link{
   line-height: 51px;
   font-size: 36px;
@@ -198,6 +201,7 @@ margin: 0 auto 100px auto;
   right: 48px;
   top: 50%;
   position: absolute;
+  text-decoration: none;
 }
 .feynman__img{
   display: flex;
@@ -209,68 +213,85 @@ margin: 0 auto 100px auto;
   z-index: -1;
 }
 .kaufman{
- overflow: hidden;
- background-color: #1f1f1f;
- position: relative;
- color:white;
- z-index: -1;
- }
-.triangle{
-  position: absolute;
-  right: -210;
-  top: 0;
-  width: 877px;
-  height: 877px;
-  z-index: 1;
-}
-.section-title__theme_dark{
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #1f1f1f;
+  color: white;
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  margin: 0;
+ }
+.section-title__theme_dark{
+  margin: 0 auto 0 auto;
+  padding: 0;
+  width: 60%;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
-  width: 60%;
-  margin: 90 auto 0 auto;
 }
+.section-subtitle__theme_dark{
+  margin: 20 auto 0 auto;
+  padding: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 60%;
+}
+
 .table__theme_dark{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-width: 1100px;
-margin-bottom:  90px;
-margin-left: auto;
-margin-right: auto;
+  margin: 0 auto 0 auto;
+  padding: 0;
+}
+.table__cell_theme_dark {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  color: white;
+  margin: 80 auto 0 auto;
+  flex-direction: column;
+  z-index: 2;
 }
 .table__heading_theme_dark{
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  flex-wrap: wrap;
-  }
+  margin: 0;
+}
 .table__text_theme_dark{
- 
+  margin-top: 20px;
+  z-index: 2;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  margin-top: 20px;
-  
 }
-.section-subtitle__theme_dark{
-  display: flex;
-  justify-content: center;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  width: 60%;
-  margin: 20 auto 0 auto;
+.kaufman__triangle{
+display: flex;
+position: absolute;
+right: -210px;
+top: 0;
+z-index: 1;
+width: 877px;
+height: 877px;
+margin: 0;
+padding: 0;
 }
+
+
+
 .footer {
   display: flex;
+  justify-content: space-between;
   background-color: #1f1f1f;
   min-height: 350px;
   color: white;
-}
+  padding-top: 60px;
+  padding-bottom: 40px;
+  }
 
 .footer__columns {
   display: flex;
@@ -304,9 +325,7 @@ margin-right: auto;
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
-  margin: 0;
-  padding: 0;
-}
+  }
 .footer__column-links {
   display: flex;
   flex-direction: column;
@@ -321,6 +340,7 @@ margin-right: auto;
   list-style: none;
   margin: 0;
   padding: 0;
+  color: white;
 }
 .footer__social-icon {
   width: 16px;
@@ -328,3 +348,5 @@ margin-right: auto;
   margin-right: 10px;
   border: none;
 }
+
+
