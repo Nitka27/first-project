@@ -2,7 +2,8 @@
 .cards__item {
     width: 240px;
     margin-right: 100px;
-    margin-bottom: 0px;
+    margin-top: 60px;
+    padding-bottom: 0px;
 }
 
 .cards__item.cards__item:nth-child(3n){
