@@ -1,4 +1,6 @@
-
+li {
+    list-style-type: none;
+}
 .footer__column-link {
     font-size: 18px;
     font-weight: normal;
@@ -7,4 +9,8 @@
     margin: 0;
     padding: 0;
     color: white;
+}
+.footer__column-link:hover {
+    opacity: .3;
+    transition: .5s;
 }
