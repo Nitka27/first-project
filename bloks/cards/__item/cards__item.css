@@ -4,6 +4,7 @@
     margin-right: 100px;
     margin-top: 60px;
     padding-bottom: 0px;
+    list-style-type: none;
 }
 
 .cards__item.cards__item:nth-child(3n){
