@@ -48,8 +48,6 @@
 @import url(../bloks/resources/__logo/resources__logo.css);
 @import url(../bloks/resources/__logo-zone/resources__logo-zone.css);
 
-@import url(../bloks/logo/_place/_header/logo_place_header.css);
-
 @import url(../bloks/two-columns/two-columns.css);
 @import url(../bloks/two-columns/__brief/two-columns__brief.css);
 @import url(../bloks/two-columns/__main-text/two-columns__main-text.css);
@@ -62,7 +60,7 @@
 @import url(../bloks/cards/__item/cards__item.css);
 @import url(../bloks/cards/__title/cards__title.css);
 
-@import url(../bloks/section-title/section_title.css);
+@import url(../bloks/section-title/section-title.css);
 @import url(../bloks/section-title/_theme/section-title_theme_dark.css);
 
 @import url(../bloks/section-subtitle/section-subtitle.css);
@@ -86,4 +84,4 @@
 @import url(../bloks/footer/__column/_content/footer__column_content_copyright.css);
 @import url(../bloks/footer/__columns/footer__columns.css);
 @import url(../bloks/footer/__social-icon/footer__social-icon.css);
-@import url(../bloks/footer/logo/_place/logo_place_footer.css);
+@import url(../bloks/logo/_place/logo_place_footer.css);
